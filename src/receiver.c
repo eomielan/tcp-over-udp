@@ -44,10 +44,7 @@ uint32_t _latestSequenceNumber = 0;
 
 /**
  * @brief Sends an acknowledgment message to the sender.
- *
- * TODO: add sequence number to ack_msg (depends on how this is implemented in sender)
- * btw this is for sending an acknowledgement that a packet was received
- *
+ * 
  * @param sockfd The socket file descriptor
  * @param addr The address of the sender
  * @param addrlen The length of the address
@@ -287,8 +284,6 @@ void rrecv(unsigned short int myUDPport,
         time(&end);
         double seconds = difftime(end, start);
 
-        // TODO: implement flow control via sliding window mechanism
-        //
         // If writeRate exceeded, signal to sender to slow down
         if (writeRate > 0 && bytesWritten / seconds > writeRate)
         {
