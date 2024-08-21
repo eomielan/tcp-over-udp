@@ -1,4 +1,4 @@
-# TCP using UDP
+# TCP over UDP
 
 ## Overview
 
@@ -70,8 +70,6 @@ To run the bandwidth check:
 **Q: FileNotFoundError: [Errno 2] No such file or directory: '../../receiver': '../../receiver'**
 
 A: Make sure to compile the C code and enter `cd src/test` before running the test suite.
-
-<br/>
 
 **Q: Captured stderr call - bind: Address already in use**
 
