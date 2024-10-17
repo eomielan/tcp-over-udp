@@ -14,7 +14,7 @@ In order to account for unreliable network connectivity, we first establish a re
 
 Follow these steps to run the program:
 
-1. Install g++ and run it on Ubuntu or macOS.
+1. Ensure that `gcc` is installed on your system.
 2. (optional) If you have built the binaries before, run `make clean` to clean the executable files.
 3. In the terminal, run `make`.
 4. To start the sender, run `./sender receiver_hostname receiver_port filename_to_xfer bytes_to_xfer`
