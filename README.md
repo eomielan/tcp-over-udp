@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project uses UDP to implement our a custom TCP-like protocol to send files between two host nodes in a network. Our implementation is able to:
+This project uses UDP to implement a custom TCP-like protocol to send files between two host nodes in a network. Our implementation is able to:
 
 - Tolerate packet drops
 - Allow other concurrent connections a fair chance
